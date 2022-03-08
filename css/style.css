@@ -1,0 +1,122 @@
+.wrapper {
+   font-family: arial;
+   padding-top: 200px;
+   min-height: 100%;
+   background: rgb(33,103,204);
+   background: radial-gradient(circle, rgba(33,103,204,1) 57%, rgba(31,154,201,1) 92%);
+}
+.container {
+   max-width: 1000px;
+   padding: 0 15px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-self: center;
+}
+.block {
+   width: 500px;
+   height: 600px; 
+   color: #fff;
+   font-size: 28px;
+   background-color: #1E0000;
+   padding: 15px;
+   display: flex;
+   flex-direction: column;
+}
+.textarea {
+   background-color: rgba(255, 255, 255, 0.404);
+   width: 100%;
+   height: 100px;
+   margin-bottom: 20px;
+   padding-right: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   font-size: 42px;
+}
+.row {
+   display: flex;
+   flex: 1 0 auto;
+}
+.numbers__grid {
+   flex: 1 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+   margin-right: 10px;
+}
+.number {
+   background-color: #500805;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.number:hover {
+   background-color: #500705c0;
+}
+.number:active {
+   background-color: #50070536;
+}
+.close {
+   background-color: #500805;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+.close:hover {
+   background-color: #500705c0;
+}
+.operand__column {
+   flex: 0 0 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.operand__item {
+   flex: 0 0 78.75px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #BC6D4F;
+   transition: 0.3s;
+   cursor: pointer;
+}
+.operand__item.active {
+   background-color: #a66900be;
+}
+.operand__item:hover {
+   background-color: #a66900be;
+}
+.plus {
+}
+.minus {
+}
+.mult {
+}
+.break {
+}
+.point.active {
+   pointer-events: none;
+}
+.equil {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 0 0 90px;
+   background-color: #9D331F;
+   margin-top: 15px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.equil:hover {
+   background-color: #9d341fbe;
+}
